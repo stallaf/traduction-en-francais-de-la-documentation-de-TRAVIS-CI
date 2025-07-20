@@ -1,0 +1,138 @@
+/* Sources SF aka stallaf
+ * 20-07-2025
+ * stallaf arobase stallaf point fr
+ * license : CC-BY-SA
+ * fichier css de base
+*/
+
+.accueil ul{
+  padding-top: 2px;
+}
+.accueil ul, li{
+  list-style-type: none;
+}
+.accueil h2{
+  text-align: center;
+}
+.accueil h3 {
+  color:darkseagreen;
+  padding-top: 5px;
+}
+.ancre-titre {
+ transition:hover .2s ease;
+ position:absolute;
+ opacity:.0
+}
+.ancre-titre.after {
+ margin-left:5px;
+ margin-top: -5px;
+}
+.ancre-titre.before {
+ margin-left:-22px;
+ padding-right:8px
+}
+.ancre-titre:after {
+ content:"#"
+}
+:hover>.ancre-titre,
+.ancre-titre:focus {
+ opacity: 0.5;
+}
+.bouton {
+  background-color: darkseagreen;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.centre{
+  text-align: center;
+}
+.deux-colonnes {
+  columns: 2 300px;
+}
+.deux-colonnes-bis{
+  columns: 2 50px;
+}
+.deux-colonnes-bis p{
+  column-span: all;
+}
+.fa {
+  display: inline;
+  font-family: "ForkAwesome";
+  font-size: inherit;
+  text-rendering: auto;
+ }
+.fa-flag:before {
+  content:"\f11d";
+}
+.invisible{
+  visibility: hidden;
+}
+.notice p {
+  margin:0 0 1.5rem .5rem;
+}
+.notice p:last-child {
+  margin-bottom:0;
+}
+.notice.cadre {
+  margin: 3% 0 3% 0;
+  padding:3%;
+  background:#efefef;
+  font-style: italic;
+ }
+ .notice.defaut {
+  border-left:3px solid #d3d3d3;
+}
+.notice.info {
+  color:#df8a13;
+  border: 1px solid #df8a13;
+  border-left:5px solid #f0ad4e;
+  background:#fcf8f3;
+}
+.notice.note {
+  color:#28a1c5;
+  border-left:5px solid #5bc0de;
+  background:#f4f8fa;
+}
+.notice.astuce {
+  color:#3d8b3d;
+  border-left:5px solid #5cb85c;
+  background:#f1f9f1;
+}
+.notice.attention {
+  color:#b52b27;
+  border-left:5px solid #d9534f;
+  background:#fdf7f7;
+}
+.notice.astuce,
+.attention,
+.info,
+.note{
+  border-radius: 5px;
+  margin: 3% 0 3% 0;
+  padding:3%;  
+}
+.plus-petit {
+  font-size: smaller;
+}
+.tdm, .liste-langage{
+  text-transform: uppercase;
+}
+.titre-code{
+  background-color:slategrey;
+  color:white;
+  width: auto;
+  word-spacing: 1rem;
+  margin-bottom: -16px;
+}
+.trois-colonnes {
+  columns: 3 200px;
+}

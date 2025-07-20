@@ -1,0 +1,52 @@
+site_name: travis.stallaf.net
+site_url: https://travis.stallaf.net/
+site_author: SF aka stallaf
+site_description: Traduction en français de la documentation de TRAVIS CI.
+
+theme: 
+   name: readthedocs
+   locale: fr
+   highlightjs: true             # coloration du code source
+   hljs_languages:               # langages utilisés
+      - yaml
+      - html
+      - php
+      - md
+      - json
+      - bash
+      - shell
+      - css
+      - ini
+      - txt
+      - twig
+      - console
+   sticky_navigation: false      # le menu reste fixe
+
+extra_css:
+   - css/base.css         # pour la prise en charge du css personalisé
+    
+nav:
+  - 1. Démarrage:
+    - Bienvenue: bienvenue.md
+    - Embarquement pour Travis CI: embarquement.md
+    - Concepts de base pour les débutants: concepts-de-base-pour-debutants.md
+    - Personnalisation de la construction: personnalisation-de-la-construction.md
+    - Accélération de la construction: acceleration-de-la-construction.md
+    - Utilisation de Docker: utilisation-de-docker.md
+    - Tests avec des navigateurs: tests-avec-des-navigateurs.md
+    - Construction de demande de tirage: construction-de-demande-de-tirage.md
+    - Tâches cron: taches-cron.md
+    - Problèmes courants de construction: problemes-courants-de-construction.md
+    - Client en ligne de commande: client-en-ligne-de-commande.md
+    - Import de configuration pour la construction: import-de-configuration-pour-la-construction.md
+    - Validation de configuration de la construction: validation-configuration-de-la-construction.md
+
+
+not_in_nav: | 
+   index.md
+   a-propos.md
+   mentions-legales.md
+
+exclude_docs: |
+
+
