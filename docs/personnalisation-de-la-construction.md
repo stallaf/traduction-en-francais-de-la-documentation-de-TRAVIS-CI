@@ -31,7 +31,7 @@
 </div>
 </p>
 
-<h2 id="configuration-et-parametres-de-build-de-travis">Configuration et paramètres de build de Travis CI
+<h2 id="configuration-et-parametres-de-build-de-travis">Configuration et paramètres de build de Travis CI.
 <a href="#configuration-et-parametres-de-build-de-travis" class="ancre-titre after"></a></h2>
 
 Les builds sur Travis CI sont configurées principalement via la configuration stockée dans le fichier `.travis.yml` dans votre référentiel. Cela permet à votre configuration d'être contrôlée par version et d'être flexible.
@@ -90,7 +90,7 @@ Si vous êtes uniquement intéressé par créer le commit le plus récent sur ch
 
 Le _paramètre d'annulation automatique_ est dans l'onglet Paramètres de chaque référentiel, et vous pouvez l'activer séparément pour :  
 
-*  _Annulation automatique des builds de branches_  - annule la file d'attente dans votre branche et apparaît dans l'onglet _Historique de build_ de votre référentiel.
+*  _Annulation automatique des builds de branches_  - annule la file d'attente dans votre branche et apparaît dans l'onglet _Historique de build_ de votre référentiel ;
 *  _Annulation automatique des builds de pull request_ - annule la file d'attente pour les pull request (le futur résultat de la fusion de votre branche de changement/fonctionnalités par rapport à sa cible) et apparaît dans l'onglet _Pull Requests_ de votre référentiel.
 
 ![Paramètre d'annulation automatique](https://docs.travis-ci.com/images/autocancellation.png)
@@ -108,7 +108,9 @@ Veuillez noter que si vous utilisez une profondeur de 1 et que vous avez une fil
 
 Vous pouvez définir la [profondeur du clone](https://git-scm.com/docs/git-clone#git-clone---depthltdepthgt) dans `.travis.yml` :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 git:
     depth: 3
@@ -116,7 +118,9 @@ git:
 
 Vous pouvez également supprimer entièrement le drapeau `--depth` avec :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 git:
     depth: false
@@ -133,7 +137,9 @@ Travis CI clone les dépôts sans l'option quiet (`-q`) par défaut. Activer l'i
 
 Vous pouvez activer le [drapeau silencieux](https://git-scm.com/docs/git-clone#git-clone---quiet) dans .travis.yml :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 git:
     quiet: true
@@ -144,7 +150,9 @@ git:
 
 Travis CI clone les sous-modules Git par défaut. Pour éviter ce réglage :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 git:
     submodules: false
@@ -153,12 +161,14 @@ git:
 <h2 id="git-lfs">Git LFS.
 <a href="#git-lfs" class="ancre-titre after"></a></h2>
 
-<h4 id="authentification-github">Authentification GitHub.
-<a href="#authentification-github" class="ancre-titre after"></a></h4>
+<h3 id="authentification-github">Authentification GitHub.
+<a href="#authentification-github" class="ancre-titre after"></a></h3>
 
 Nous vous recommandons d'utiliser un jeton GitHub OAuth en lecture seule pour vous authentifier lors de l'utilisation de [|Git LFS](https://git-lfs.github.com/) :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 before_install:
    - echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
@@ -169,12 +179,14 @@ Cette authentification est requise lors de la connexion à des dépôts privés,
 
 Les clés de déploiement ne sont actuellement pas prises en charge par LFS, vous devez donc utiliser un jeton GitHub OAuth pour vous authentifier, comme dans l'exemple ci-dessus.
 
-<h4 id="authentification-bitbucket">Authentification Bitbucket.
-<a href="#authentification-bitbucket" class="ancre-titre after"></a></h4>
+<h3 id="authentification-bitbucket">Authentification Bitbucket.
+<a href="#authentification-bitbucket" class="ancre-titre after"></a></h3>
 
 Nous vous recommandons d'utiliser un token Bitbucket en lecture seule pour vous authentifier lors de l'utilisation de [|Git LFS](https://git-lfs.github.com/) :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 before_install:
    - echo -e "machine bitbucket.com\n  login $BITBUCKET_TOKEN" > ~/.netrc
@@ -185,12 +197,14 @@ Cette authentification est requise lors de la connexion aux référentiels priv�
 
 Les clés de déploiement ne sont pas actuellement prises en charge par LFS, vous devez donc utiliser un token Bitbucket OAuth pour vous authentifier comme dans l'exemple ci-dessus.
 
-<h4 id="authentification-gitlab">Authentification Gitlab.
-<a href="#authentification-gitlab" class="ancre-titre after"></a></h4>
+<h3 id="authentification-gitlab">Authentification Gitlab.
+<a href="#authentification-gitlab" class="ancre-titre after"></a></h3>
 
 Nous vous recommandons d'utiliser un jeton GitLab OAuth en lecture seule pour vous authentifier lors de l'utilisation de Git LFS :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 before_install:
    - echo -e "machine gitlab.com\n  login $GITLAB_TOKEN" > ~/.netrc
@@ -201,12 +215,14 @@ Cette authentification est requise lors de la connexion aux référentiels priv�
 
 Les clés de déploiement ne sont pas actuellement prises en charge par LFS, vous devez donc utiliser un jeton GitLab OAuth pour vous authentifier comme dans l'exemple ci-dessus.
 
-<h4 id="authentification-assembla">Authentification Assembla.
-<a href="#authentification-assembla" class="ancre-titre after"></a></h4>
+<h3 id="authentification-assembla">Authentification Assembla.
+<a href="#authentification-assembla" class="ancre-titre after"></a></h3>
 
 Nous vous recommandons d'utiliser un token Assembla en lecture seule pour vous authentifier lors de l'utilisation de Git LFS :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 before_install:
    - echo -e "machine assembla.com\n  login $ASSEMBLA_TOKEN" > ~/.netrc
@@ -217,17 +233,19 @@ Cette authentification est requise lors de la connexion aux référentiels priv�
 
 Les clés de déploiement ne sont pas actuellement prises en charge par LFS, vous devez donc utiliser un jeton Assembla OAuth pour vous authentifier comme dans l'exemple ci-dessus.
 
-<h4 id="authentification-linux">Linux.
-<a href="#authentification-linux" class="ancre-titre after"></a></h4>
+<h3 id="authentification-linux">Linux.
+<a href="#authentification-linux" class="ancre-titre after"></a></h3>
 
 Git LFS est pris en charge par défaut sur nos images Ubuntu Fility, Xenial et Bionic.
 
-<h4 id="sauter-smudge">Git LFS sauter Smudge.
-<a href="#sauter-smudge" class="ancre-titre after"></a></h4>
+<h3 id="sauter-smudge">Git LFS sauter Smudge.
+<a href="#sauter-smudge" class="ancre-titre after"></a></h3>
 
 Le taux GitHub limite les demandes Git LFS pendant le processus `git clone`. Si vous rencontrez des problèmes de limitation de taux, vous pouvez ignorer la récupération des fichiers Git-LFS pendant le `git clone` initial (équivalent à `git lfs smudge --skip)`), et téléchargez ces actifs pendant la phase `before_install` de votre build. Pour y parvenir, vous pouvez utiliser la configuration suivante dans `.travis.yml` :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 git:
     lfs_skip_smudge: true
@@ -240,7 +258,9 @@ Travis CI prend en charge la capacité `git` de vérification sparce.
 
 Pour cloner votre référentiel, ajouter:
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 git:
     sparse_checkout: skip-worktree-map-file
@@ -255,7 +275,9 @@ Travis CI clone les dépôts avec un comportement [core.autocrlf](https://git-sc
 
 Pour cloner votre référentiel sans conversion de fin de ligne, ajoutez :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 git:
 git:
@@ -271,7 +293,9 @@ Dans certains flux de travail, comme les [étapes de build](./etapes-de-construc
 
 Vous pouvez le faire en ajoutant :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 git:
     clone: false
@@ -288,7 +312,9 @@ Dans certains cas, lorsqu'un référentiel est utilisé à la fois pour Linux et
 
 Pour faire ceci :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 git:
     symlinks: true
@@ -303,12 +329,14 @@ Travis CI utilise le fichier `.travis.yml` de la branche contenant le commit Git
 Notez que vous devez également prendre en compte les<a href="../pr.md">builds pull requests</a> automatiques lorsque vous décidez de mettre certaines branches sur liste de sécurité ou sur liste de blocage.
 </div>
 
-<h4 id="branches-liste-de-securite-ou-blocage">Branches de liste de sécurité ou de blocage.
-<a href="#branches-liste-de-securite-ou-blocage" class="ancre-titre after"></a></h4>
+<h3 id="branches-liste-de-securite-ou-blocage">Branches de liste de sécurité ou de blocage.
+<a href="#branches-liste-de-securite-ou-blocage" class="ancre-titre after"></a></h3>
 
 Spécifier les branches à construire à l'aide d'une liste de sécurité, ou bloquer les branches que vous ne voulez pas construire :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 # blocklist
 branches:
@@ -330,7 +358,9 @@ Si vous utilisez à la fois une liste de sécurité et une liste de blocage, la 
 
 Pour construire _toutes_ les branches :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 branches:
     only:
@@ -342,12 +372,14 @@ branches:
 Notez que pour des raisons historiques `.travis.yml` doit être présent sur toutes les branches actives de votre projet.
 </div>
 
-<h4 id="expressions-regulieres">Expressions régulière.
-<a href="#expressions-regulieres" class="ancre-titre after"></a></h4>
+<h3 id="expressions-regulieres">Expressions régulière.
+<a href="#expressions-regulieres" class="ancre-titre after"></a></h3>
 
 Vous pouvez utiliser des expressions régulières pour les branches de liste de sécurité ou celles de blocage.
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 branches:
     only:
@@ -364,7 +396,7 @@ Les options qui sont spécifiées après le dernier `/` (par exemple, `i` pour u
 
 Si vous ne souhaitez pas lancer une build pour un commit particulier qu'elle qu'en soit la raison, vous pouvez demander à Travis CI de ne pas construire ce commit par le biais d'une commande dans le message de commit.
 
-La commande doit être l'une des formes suivantes: 
+La commande doit être l'une des formes suivantes : 
 
 ```console
 [<KEYWORD> skip]
@@ -389,7 +421,9 @@ Notez que dans le cas où plusieurs commits sont poussés ensemble, la commande 
 
 Vous pouvez également définir des exclusions à la build matrice :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 jobs:
     exclude:
@@ -405,12 +439,14 @@ jobs:
 Toutes les buils de matrice  sont actuellement limitées à <code>200 jobs</code> pour les référentiels privés et publics. Si vous êtes sur un plan open-source, n'oubliez pas que Travis CI fournit ce service gratuitement à la communauté. Veuillez donc spécifier uniquement la matrice dont vous avez réellement besoin.
 </div>
 
-<h4 id="nom-des-jobs-dans-les-matrices">Nom des travaux dans les matrices.
-<a href="#nom-des-jobs-dans-les-matrices" class="ancre-titre after"></a></h4>
+<h3 id="nom-des-jobs-dans-les-matrices">Nom des travaux dans les matrices.
+<a href="#nom-des-jobs-dans-les-matrices" class="ancre-titre after"></a></h3>
 
 Vous pouvez définir des noms pour des jobs spécifiques dans une matrice. Nous recommandons des noms de travail uniques, mais ne l'appliquez pas (bien que cela puisse changer à l'avenir).  Les jobs définis dans la section `matrix.include` peuvent se voir attribuer un des noms de jobs suivant :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: python
 jobs:
@@ -429,14 +465,16 @@ jobs:
 
 Les travaux générés par l'expansion de la matrice ne peuvent pas recevoir des attributs de nom.
 
-<h4 id="jobs-exclus">Jobs exclus.
-<a href="#jobs-exclus" class="ancre-titre after"></a></h4>
+<h3 id="jobs-exclus">Jobs exclus.
+<a href="#jobs-exclus" class="ancre-titre after"></a></h3>
  
 Si les travaux que vous souhaitez exclure de la build matrice partagent les mêmes paramètres de matrice, vous pouvez spécifier uniquement ceux-ci et omettre les parties variables.
 
 Supposons que vous ayez :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: ruby
 rvm:
@@ -456,7 +494,9 @@ gemfile:
 
 Il en résulte une build matrice de 3 × 3 × 4. Pour exclure tous les travaux qui ont `rvm` value `2.0.0` et `gemfile` value `Gemfile`, vous pouvez écrire :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 jobs:
     exclude:
@@ -466,7 +506,9 @@ jobs:
 
 Ce qui équivaut à :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 jobs:
     exclude:
@@ -481,14 +523,16 @@ jobs:
         env: DB=mysql
 ```
 
-<h5 id="jobs-exclus-avec-env">Exclure des jobs avec la Valeur env.
+<h5 id="jobs-exclus-avec-env">Exclure des jobs avec la valeur env.
 <a href="#jobs-exclus-avec-env" class="ancre-titre after"></a></h5>
  
 Lorsque vous excluez les jobs avec les valeurs `env`, la valeur doit correspondre _exactement_.
 
 Par exemple :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: ruby
 rvm:
@@ -510,7 +554,9 @@ Définit une matrice 3 × 4, car la valeur `env` ne correspond à aucun job déf
 
 Pour exclure tous les travaux Ruby 1.9.3 avec les réglages `DB=mongodb`, écrivez :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: ruby
 rvm:
@@ -530,12 +576,14 @@ jobs:
       env: DB=mongodb SUITE=compact # not 'env: SUITE=compact DB=mongodb'
 ```
 
-<h4 id="jobs-explicitement-inclus">Emplois explicitement inclus.
-<a href="#jobs-explicitement-inclus" class="ancre-titre after"></a></h4>
+<h3 id="jobs-explicitement-inclus">Emplois explicitement inclus.
+<a href="#jobs-explicitement-inclus" class="ancre-titre after"></a></h3>
 
 Il est également possible d'inclure des entrées dans la matrice avec `matrix.include` :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 jobs:
     include:
@@ -550,7 +598,9 @@ Ceci est utile si vous souhaitez tester uniquement la dernière version d'une d�
 
 Vous pouvez utiliser cette méthode pour créer une build de matrice ne contenant que des combinaisons spécifiques. Par exemple, ce qui suit crée une build de matrice  avec 3 travaux, qui exécute une suite de tests pour chaque version de Python :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: python
 jobs:
@@ -571,7 +621,9 @@ Les jobs qui sont explicitement inclus héritent de la première valeur des clé
 
 Dans cet exemple avec une build de matrice Python à 3 jobs, chaque job dans `matrix.include` a la valeur `python` fixée à `'3.8'`. Vous pouvez définir explicitement la version de Python pour une entrée spécifique :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: python
 python:
@@ -587,8 +639,8 @@ jobs:
 script: env $EXTRA_TESTS ./test.py $TEST_SUITE
 ```
 
-<h5 id="autoriser-intentionnellement-les-jobs-a-echouer">Autoriser intentionnellement les jobs à échouer.
-<a href="#autoriser-intentionnellement-les-jobs-a-echouer" class="ancre-titre after"></a></h5>
+<h3 id="autoriser-intentionnellement-les-jobs-a-echouer">Autoriser intentionnellement les jobs à échouer.
+<a href="#autoriser-intentionnellement-les-jobs-a-echouer" class="ancre-titre after"></a></h3>
 
 Vous pouvez définir des jobs autorisés à échouer dans la build de matrice.
 
@@ -596,7 +648,9 @@ Les échecs autorisés sont des jobs de votre build de matrice qui sont autoris�
 
 Définir les échecs autorisés dans la build de matrice comme paires de clé/valeur :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 jobs:
     allow_failures:
@@ -610,7 +664,9 @@ Les échecs autorisés peuvent inclure une [condition](./constrctions-conditionn
 
 Par exemple, l'option suivante permettrait au job utilisant `rvm : 1.9.3` de n'échouer que sur la branche principale :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 jobs:
     allow_failures:
@@ -628,7 +684,9 @@ Lors de la comparaison des travaux avec les définitions données dans `allow_fa
 
 Considérer ce qui suit :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: ruby
 rvm:
@@ -648,7 +706,9 @@ Ici, aucun travail n'est autorisé à échouer car aucun travail n'a la valeur `
 
 Suivant :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: php
 php:
@@ -665,14 +725,16 @@ jobs:
 
 Sans `env` de haut niveau, aucun travail ne sera autorisé à échouer.
 
-<h5 id="finition-rapide">Utilisez une finition rapide.
-<a href="#finition-rapide" class="ancre-titre after"></a></h5>
+<h3 id="finition-rapide">Utilisez une finition rapide.
+<a href="#finition-rapide" class="ancre-titre after"></a></h3>
 
 Si certains jobs dans la build de matrice sont autorisés à échouer, la build ne sera pas marquée comme terminée avant sa fin.
 
 Pour marquer la build telle que terminée dès que possible, ajoutez `fast_finish: true`  à la section matrice de votre `.travis.yml` comme ceci :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 jobs:
     fast_finish: true
@@ -687,7 +749,9 @@ Si vous devez installer un deuxième langage de programmation dans votre environ
 
 Par exemple, vous pouvez utiliser la recette suivante pour installer une version personnalisée de Ruby dans une build Python :
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: python
 before_install:
@@ -696,7 +760,9 @@ before_install:
 
 Vous pouvez également installer une version PHP personnalisée dans une build Node.js comme ceci:
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 language: node_js
 before_install:
@@ -717,7 +783,9 @@ Voir [commandes de construction complexes](./etapes-de-construction.md) pour plu
 
 Si votre build nécessite la mise en place de noms d'hôtes personnalisés, vous pouvez spécifier un seul hôte ou une liste d'hôtes dans votre fichier `.travis.yml`. Travis CI configurera automatiquement les noms d'hôtes dans `/etc/hosts` pour IPv4 et IPv6.
 
-<div class="titre-code"> &nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
 addons:
     hosts:
@@ -737,7 +805,7 @@ Travis CI ne supporte pas actuellement les dépôts git hébergés sur d'autres 
 
 Travis CI utilise la bibliothèque Ruby libYAML, ce qui signifie que votre fichier `.travis.yml` doit être conforme YAML 1.1.
 
-<h2 id="depannage">Dépannage
+<h2 id="depannage">Dépannage.
 <a href="#depannage" class="ancre-titre after"></a></h2>
 
 Consultez la liste des [problèmes de build les plus courants](./problemes-courants-de-construction.md).

@@ -43,11 +43,11 @@ Une fois redirigé vers la plate-forme choisie, connectez-vous à votre compte e
 
 Si vous avez des doutes sur les droits d'accès à Travis CI à votre plate-forme choisie, lisez plus de détails ici : 
 
-* [L'application OAuth autorisée GitHub](https://docs.travis-ci.com/user/github-oauth-scopes/#travis-ci-github-oauth-app-access-rights). 
-* [Permissions GitHub utilisées par Travis CI](https://docs.travis-ci.com/user/github-oauth-scopes). 
-* [Autorisations d'assembla utilisées par Travis CI](https://docs.travis-ci.com/user/assembla-oauth-scopes/) 
-* [Permissions Bitbucket utilisées par Travis CI](https://docs.travis-ci.com/user/bb-oauth-scopes/). 
-* [Autorisations Gitlab utilisées par Travis CI](https://docs.travis-ci.com/user/gl-oauth-scopes/). 
+* [L'application OAuth autorisée GitHub](https://docs.travis-ci.com/user/github-oauth-scopes/#travis-ci-github-oauth-app-access-rights) ;
+* [Permissions GitHub utilisées par Travis CI](https://docs.travis-ci.com/user/github-oauth-scopes) ;
+* [Autorisations d'assembla utilisées par Travis CI](https://docs.travis-ci.com/user/assembla-oauth-scopes/) ;
+* [Permissions Bitbucket utilisées par Travis CI](https://docs.travis-ci.com/user/bb-oauth-scopes/) ;
+* [Autorisations Gitlab utilisées par Travis CI](https://docs.travis-ci.com/user/gl-oauth-scopes/).
 
 <p id="selectionner-un-plan"><strong>3. Sélectionnez un plan.</strong>
 <a href="#selectionner-un-plan" class="ancre-titre after"></a></p>
@@ -86,12 +86,14 @@ Si vous utilisez un compte GitHub et que vous êtes éligible pour le pack de d�
 
 Si vous souhaitez utiliser l'allocation gratuite pour le pack de développeurs Student GitHub à la place, veuillez [contacter notre équipe d'assistance](mailto:support@travis-ci.com), fournir votre enregistrement GitHub et demander l'affectation du plan respectif.
 
-<h2 id="ajouter-un-fichier-travis-yaml">Ajouter un fichier .travis.yml
+<h2 id="ajouter-un-fichier-travis-yaml">Ajouter un fichier .travis.yml.
 <a href="#ajouter-un-fichier-travis-yaml" class="ancre-titre after"></a></h2>
 
 L'étape suivante consiste à ajouter un fichier `.travis.yml` à votre référentiel pour dire à Travis CI quoi faire. L'exemple suivant spécifie un projet Ruby construit avec Ruby 2.2 et la dernière version de JRuby. 
 
-<div class="titre-code">&nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
    language: ruby
    rvm:
@@ -109,7 +111,7 @@ Ajoutez le `.travis.yml` à un emplacement spécifique dans votre référentiel.
 <p>Travis exécute uniquement les constructions sur les commits que vous poussez après avoir ajouté un fichier <code>.travis.yml</code>. Enfin, visitez <a href="https://app.travis-ci.com/">Travis CI</a> et sélectionnez votre référentiel pour vérifier la page d'état de construction pour voir si votre version <a href="https://docs.travis-ci.com/user/job-lifecycle/#breaking-the-build">passe ou échoue</a> en fonction de l'état de retour de la commande build.
 </div>
 
-<h3 id="configuration-du-fichier-assembla-travis-yaml">Configuration du fichier Assembla .travis.yml
+<h3 id="configuration-du-fichier-assembla-travis-yaml">Configuration du fichier Assembla .travis.yml.
 <a href="#configuration-du-fichier-assembla-travis-yaml" class="ancre-titre after"></a></h3>
 
 <div class="notice info">
@@ -124,7 +126,7 @@ Pour les utilisateurs d'Assembla, configurez le .travis.yml comme suit:
 2. Référentiel SVN: 
       1. Dans le `/ trunk /` (par défaut c'est `/trunk/.travis.yml`) pour que les builds fonctionnent après les commits dans `trunk`. 
       2. Dans  `/branches/<branch name>/` (par exemple, `/branches/abc/.travis.yml` pour la branche nommée `abc`) pour que les builds s'exécutent après les commits d'une branche spécifique. 
-3. P4 (Perforce Helix Core) Repository: 
+3. P4 (Perforce Helix Core) Repository : 
       1. Dans le `/<potname>/main/` (par défaut c'est `/depot/main/.travis.yml`) pour que les constructions s'exécutent après avoir été soumises à `/<depotname>/main`. 
       2. Dans le répertoire correspondant au flux spécifique `/depot/<stream name>/`.travis.yml (par exemple, `/depot/abc/.travis.yml` pour le flux `abc`) pour les constructions à exécuter après les soumissions à un flux spécifique.
 
@@ -134,7 +136,9 @@ Le depot/repository Perforce peut être très lourd, de sorte que son téléchar
 
 Voir l'exemple ci-dessous pour référence. 
 
-<div class="titre-code">&nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
    dist: focal
    language: ruby
@@ -143,11 +147,10 @@ Voir l'exemple ci-dessous pour référence.
     - jruby
    perforce_test_path: /your/subpath/within/repository/which/will/be/downloaded
 ```
-</div>
 
 Les constructions Performe et SVN sont actuellement **disponibles uniquement pour les environnements de construction d'architecture CPU Linux Ubuntu** et standard AMD64, à partir de la distribution Bionic Beaver Ubuntu.
 
-<h2 id="changer-de-compte">Changer de compte
+<h2 id="changer-de-compte">Changer de compte.
 <a href="#changer-de-compte" class="ancre-titre after"></a></h2>
 
 Vous pouvez facilement passer d'un compte de fournisseur de plateforme cloud à un autre :
@@ -158,57 +161,70 @@ Vous pouvez facilement passer d'un compte de fournisseur de plateforme cloud à 
 
 ![Commuter les comptes](https://docs.travis-ci.com/user/images/onboarding-settings.png)
 
-
-<h2 id="selectionner-un-autre-langage-de-programmation">Sélectionnez un autre langage de programmation
+<h2 id="selectionner-un-autre-langage-de-programmation">Sélectionnez un autre langage de programmation.
 <a href="#selectionner-un-autre-langage-de-programmation" class="ancre-titre after"></a></h2>
 
-Utilisez l'une de ces langues communes:
+Utilisez l'une de ces langues communes :
 
-<div class="titre-code">&nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
     language: ruby
 ```
 
-<div class="titre-code">&nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
     language: yaml
 ```
 
-<div class="titre-code">&nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
     language: java
 ```
 
-<div class="titre-code">&nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
     language: node_js
 ```
 
-<div class="titre-code">&nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
     language: python
 ```
 
-<div class="titre-code">&nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
     language: php
 ```
 
-<div class="titre-code">&nbsp;.travis.yml</div>
+<div class="titre-code">
+    <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+</div>
 ```yaml
     language: go
 ```
 
 Travis CI prend en charge de nombreux [langages de programmation](./langages.md).
 
-<h2 id="pour-en-savoir-plus">Pour en savoir plus
+<h2 id="pour-en-savoir-plus">Pour en savoir plus.
 <a href="#pour-en-savoir-plus" class="ancre-titre after"></a></h2>
 
 Vous trouverez plus d'informations utiles dans nos pages de tutoriels :
 
 * [S'inscrire à Travis](https://youtu.be/IZJJxl9BkmA) ;
 * [Démarrer avec Travis CI](https://youtu.be/_Og2kydTLWk) ;
-* [Concepts de base pour les débutants](https://youtu.be/EER3AWu4sqM);
+* [Concepts de base pour les débutants](https://youtu.be/EER3AWu4sqM) ;
 * [Tutoriels Travis CI](./tutoriels.md).
 <hr class="invisible">
 

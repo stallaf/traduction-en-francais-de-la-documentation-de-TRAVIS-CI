@@ -1,11 +1,11 @@
 <img src="https://docs.travis-ci.com/images/ui/docs-desktop.svg">
 
 <div class="accueil">
-<h2>Vous êtes nouveau dans le coin ?<br> 
-Nous allons vous donner un coup de pouce.</h2>
+<h1>Vous êtes nouveau dans le coin ?<br> 
+Nous allons vous donner un coup de pouce.</h1>
 
 <div class="centre">
-<button class="bouton">Embarquez pour TRAVIS CI</button>
+<a href="../embarquement" class="bouton-embarquement">Embarquez pour TRAVIS CI</a>
 </div>
 <hr>
 

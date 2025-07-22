@@ -1,8 +1,8 @@
 # Concepts de base pour les débutants
 
 <p>
-<div class="deux-colonnes">
-    <div class="tdm">
+<div class="tdm">
+    <div class="deux-colonnes">
         <ul>
             <li><a href="#integration-continue">Qu'est-ce que l'intégration continue ?</a></li>
             <li><a href="#construire-tester-et-deployer">Constructions et automatisation IC : Construire, tester et déployer</a></li>

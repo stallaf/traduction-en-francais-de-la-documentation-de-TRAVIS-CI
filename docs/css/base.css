@@ -11,11 +11,11 @@
 .accueil ul, li{
   list-style-type: none;
 }
-.accueil h2{
+.accueil h1{
   text-align: center;
 }
 .accueil h3 {
-  color:darkseagreen;
+  color:#39aa56;
   padding-top: 5px;
 }
 .ancre-titre {
@@ -38,8 +38,8 @@
 .ancre-titre:focus {
  opacity: 0.5;
 }
-.bouton {
-  background-color: darkseagreen;
+.bouton-embarquement {
+  background-color: #39aa56;
   border-radius: 12px;
   border: none;
   color: white;
@@ -50,7 +50,13 @@
   font-size: 18px;
   margin: 4px 2px;
   font-weight: bolder;
-  cursor: pointer;
+  cursor: pointer;  
+ }
+.bouton-embarquement:focus, 
+.bouton-embarquement:active, 
+.bouton-embarquement:hover {
+  background-color:#5cb85c;
+  color: white;  
 }
 .centre{
   text-align: center;
@@ -73,8 +79,24 @@
 .fa-flag:before {
   content:"\f11d";
 }
+h2 {
+  color: #39aa56;
+}
+h3{
+  color: #3eaaaf;
+}
 .invisible{
   visibility: hidden;
+}
+.item {
+  width: 100px;
+  background-color:slategrey;
+}
+.item gauche{
+  text-align: left;
+}
+.item droit{
+  text-align: right;
 }
 .notice p {
   margin:0 0 1.5rem .5rem;
@@ -123,15 +145,39 @@
 .plus-petit {
   font-size: smaller;
 }
-.tdm, .liste-langage{
+.push-right {
+  margin-left: auto;
+}
+.tdm{
+  margin: 3em 0; 
+}
+.tdm li:before {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  background-color: #3eaaaf;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.4em; 
+}
+.tdm a {
+  color: #3eaaaf; 
+}
+.tdm a:hover {
+  text-decoration: underline;
+}
+.tdm, .liste-langage{ 
   text-transform: uppercase;
 }
 .titre-code{
   background-color:slategrey;
   color:white;
   width: auto;
-  word-spacing: 1rem;
   margin-bottom: -16px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
 }
 .trois-colonnes {
   columns: 3 200px;
