@@ -148,6 +148,20 @@ h3{
 .push-right {
   margin-left: auto;
 }
+.tableau {
+box-sizing: border-box;
+display: table-cell;
+float: none;
+line-height: 25.5px;
+position: static;
+z-index: auto;
+}
+.tableau th{
+  font-weight: bold;
+}
+.tableau tr:nth-child(even){
+  background-color: #f2f2f2;
+}
 .tdm{
   margin: 3em 0; 
 }

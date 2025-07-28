@@ -34,13 +34,21 @@ nav:
     - Accélération de la construction: acceleration-de-la-construction.md
     - Utilisation de Docker: utilisation-de-docker.md
     - Tests avec des navigateurs: tests-avec-des-navigateurs.md
-    - Construction de demande de tirage: construction-de-demande-de-tirage.md
+    - Construction de PR: construction-de-demande-de-tirage.md
     - Tâches cron: taches-cron.md
     - Problèmes courants de construction: problemes-courants-de-construction.md
     - Client en ligne de commande: client-en-ligne-de-commande.md
-    - Import de configuration pour la construction: import-de-configuration-pour-la-construction.md
+    - Importer une configuration de construction partagée: importer-une-configuration-de-build-partagee.md
     - Validation de configuration de la construction: validation-configuration-de-la-construction.md
-
+  - 2. Tutoriels:
+    - Vue d'ensemble: apercu-tutoriels.md
+    - Tutoriel C/C++: tutoriel-c-c++.md
+    - Tutoriel Java: tutoriel-java.md
+    - Tutoriel Node.js: tutoriel-nodejs.md
+    - Tutoriel Python: tutoriel-python.md
+    - Tutoriel Ruby: tutoriel-ruby.md
+  - 3. Tâches, builds, matrices et étapes: 
+    - Cycle de vie d'une tâche: cycle-de-vie-de-job.md
 
 not_in_nav: | 
    index.md

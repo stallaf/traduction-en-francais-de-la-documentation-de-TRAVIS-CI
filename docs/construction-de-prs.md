@@ -1,4 +1,4 @@
-# Construction de demande de tirage (_PR_)
+# Construction de _Pull Requests_ (_PR_)
 
 <p>
 <div class="tdm">
