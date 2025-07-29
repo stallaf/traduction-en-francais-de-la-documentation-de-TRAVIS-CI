@@ -49,6 +49,9 @@ nav:
     - Tutoriel Ruby: tutoriel-ruby.md
   - 3. Tâches, builds, matrices et étapes: 
     - Cycle de vie d'une tâche: cycle-de-vie-de-job.md
+    - Matrice de construction: matrice-de-construction.md
+    - Etapes de construction: etapes-de-construction.md
+    - Constructions conditionnelles, étapes et tâches: constructions-conditionnelles.md
 
 not_in_nav: | 
    index.md

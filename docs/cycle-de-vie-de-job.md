@@ -1,7 +1,5 @@
 # Cycle de vie d'une tâche
-    
-    
-   
+
 <p>
 <div class="tdm">
     <div class="deux-colonnes">
