@@ -52,6 +52,8 @@ nav:
     - Matrice de construction: matrice-de-construction.md
     - Etapes de construction: etapes-de-construction.md
     - Constructions conditionnelles, étapes et tâches: constructions-conditionnelles.md
+  - 4. Installation des dépendances: 
+    - Installation-des-dependances : installation-des-dependances.md
 
 not_in_nav: | 
    index.md
