@@ -54,6 +54,8 @@ nav:
     - Constructions conditionnelles, étapes et tâches: constructions-conditionnelles.md
   - 4. Installation des dépendances: 
     - Installation-des-dependances : installation-des-dependances.md
+    - Dépendances privées GitHub: dependances-privees-github.md
+    
 
 not_in_nav: | 
    index.md
