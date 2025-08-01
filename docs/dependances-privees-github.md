@@ -47,7 +47,7 @@ Si la dépendance est également sur GitHub, il existe quatre façons différent
             <td>SSH</td>
             <td>git@github.com/…</td>
             <td>Tous les référentiels auxquels l'utilisateur a accès. </td>
-            <td>Recommandé pourles <strong>dependances</strong>.</td>
+            <td><strong>Recommandé</strong>pour les dependances.</td>
         </tr>
         <tr>
             <td>Mot de passe</td>

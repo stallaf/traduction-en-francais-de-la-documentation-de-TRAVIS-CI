@@ -55,7 +55,8 @@ nav:
   - 4. Installation des dépendances: 
     - Installation-des-dependances : installation-des-dependances.md
     - Dépendances privées GitHub: dependances-privees-github.md
-    
+    - Dépendances privées BitBucket: dependances-privees-bitbucket.md
+    - Configuration de BDD et de services: configurer-bdd-et-services.md
 
 not_in_nav: | 
    index.md
