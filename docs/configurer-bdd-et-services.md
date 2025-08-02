@@ -555,7 +555,7 @@ services:
 
 Le serveur Neo4j utilise la configuration par défaut et se connecte à localhost sur le port 7474.
 
-<h2 id="elasticsearch">ElasticSearch .
+<h2 id="elasticsearch">ElasticSearch.
 <a href="#elasticsearch" class="ancre-titre after"></a></h2>
 
 Démarrez ElasticSearch dans votre `.travis.yml` :
