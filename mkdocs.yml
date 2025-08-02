@@ -59,6 +59,8 @@ nav:
     - Configuration de BDD et de services: configurer-bdd-et-services.md
     - Dépendances et répertoires du cache: dependances-et-repertoires-du-cache.md
     - Mise en cache des dépendances: mise-en-cache-des-dependances.md
+    - Ajouter SSH aux hôtes connus: ajouter-ssh-aux-hotes-connus.md
+    
 
 not_in_nav: | 
    index.md
