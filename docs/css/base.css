@@ -168,6 +168,9 @@ z-index: auto;
 .tableau2 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+tfoot th {
+  text-align: left;
+}
 .tdm{
   margin: 3em 0; 
 }

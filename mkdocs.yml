@@ -63,6 +63,7 @@ nav:
   - 5. Langage de programmation: 
     - Android: construire-un-projet-android.md
     - C: construire-un-projet-en-c.md
+    - C#: construire-un-projet-en-c#.md
 
 not_in_nav: | 
    index.md
