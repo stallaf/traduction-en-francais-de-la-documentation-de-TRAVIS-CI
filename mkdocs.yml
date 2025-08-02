@@ -62,6 +62,7 @@ nav:
     - Ajouter SSH aux hôtes connus: ajouter-ssh-aux-hotes-connus.md
   - 5. Langage de programmation: 
     - Android: construire-un-projet-android.md
+    - C: construire-un-projet-en-c.md
 
 not_in_nav: | 
    index.md
