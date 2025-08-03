@@ -168,6 +168,11 @@ z-index: auto;
 .tableau2 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+.tableau-accueil{
+  float: right;
+  height: auto;
+  padding-left: 5%;
+}
 tfoot th {
   text-align: left;
 }
