@@ -10,29 +10,30 @@
             <li><a href="#projets-openmp">Projets OpenMP</a></li>
             <li><a href="#projets-mpi">Projets MPI</a></li>
             <li><a href="#c11">C11/C++11 (et au-delà) et gestion des versions de la chaîne d'outils</a></li>
-            <li><a href="#reference-de-configuration-de-construction">Référence de configuration de construction 
-        </ul>
+            <li><a href="#reference-de-configuration-de-construction">Référence de configuration de construction</a></li>
         </ul>
     </div>
 </div>
 </p>
 
 <div class="deux-colonnes">
-    <div class="notice cadre">
-    Pour les versions linguistiques et d'autres informations spécifiques à l'environnement de compilation, consultez nos pages de référence :
-<ul>
-<li><a href="environnement-precise.md">Precise</a> ;</li>
-<li><a href="environnement-trusty.md">Trusty</a> ;</li>
-<li><a href="environnement-xenial.md">Xenial</a> ;</li>
-<li><a href="environnement-bionic.md">Bionic</a> ;</li>
-<li><a href="environnement-focal.md">Focal</a> ;</li>
-<li><a href="environnement-jammy.md">Jammy</a> ;</li>
-<li><a href="environnement-noble.md">Noble</a> ;</li>
-<li><a href="environnement-macos">macOs</a> ;</li>
-<li><a href="environnement-windows.md">Windows</a> ;</li>
-<li><a href="environnement-freebsd">FreeBSD</a>.</li>
-</ul>
-    </div>
+  <div class="notice cadre">
+  Pour les versions linguistiques et d'autres informations spécifiques à l'environnement de compilation, consultez nos pages de référence :
+  <p>
+  <ul>
+    <li><a href="environnement-precise.md">Precise</a> ;</li>
+    <li><a href="environnement-trusty.md">Trusty</a> ;</li>
+    <li><a href="environnement-xenial.md">Xenial</a> ;</li>
+    <li><a href="environnement-bionic.md">Bionic</a> ;</li>
+    <li><a href="environnement-focal.md">Focal</a> ;</li>
+    <li><a href="environnement-jammy.md">Jammy</a> ;</li>
+    <li><a href="environnement-noble.md">Noble</a> ;</li>
+    <li><a href="environnement-macos">macOs</a> ;</li>
+    <li><a href="environnement-windows.md">Windows</a> ;</li>
+    <li><a href="environnement-freebsd">FreeBSD</a>.</li>
+  </ul>
+  </p>
+  </div>
 
 <p>
 <table class="tableau">
@@ -50,7 +51,7 @@
         </tr>
         <tr>
             <td><a href="#matrice-de-construction">Cle de matrice</a></td>
-            <td><code>env</code>,<code>composer</code><td>
+            <td><code>env</code>,<code>compiler</code><td>
         </tr>
         <tr>
             <td>Support</td>
@@ -87,7 +88,7 @@ Les VM Travis CI sont 64 bits et fournissent des versions de :
 
 Les projets C sur Travis CI supposent que vous utilisiez Autotools et Make par défaut.
 
-Pour des versions précises sur la machine virtuelle, veuillez consulter «Build System Information» dans le journal de construction.
+Pour des versions précises sur machine virtuelle, veuillez consulter «Build System Information» dans le journal de construction.
 
 <h2 id="gestion-des-dependances">Gestion des dépendances.
 <a href="#gestion-des-dependances" class="ancre-titre after"></a></h2>
@@ -153,8 +154,8 @@ before_install:
 
 Si votre projet nécessite des outils compatibles avec C11, C ++ 11 ou une norme de langage plus récente, il est probable que vous devriez mettre à niveau votre compilateur et/ou des outils de construction. Cette section couvre spécifiquement comment mettre à niveau GCC, clang et cmake ; pour d'autres dépendances, veuillez consulter [l'installation des dépendances](./installation-des-dependances.md).
 
-<h3 id="gcc-sur-linux">GCC sur Linux.
-<a href="#gcc-sur-linux" class="ancre-titre after"></a></h3>
+<h3 id="gcc-sur-linux-en-c">GCC sur Linux.
+<a href="#gcc-sur-linux-en-c" class="ancre-titre after"></a></h3>
 
 * [Precise](./environnement-precise.md) navigue avec GCC 4.6.3 ;
 * [Trusty](./environnement-trusty) navigue avec GCC 4.8.2 ;
@@ -215,8 +216,8 @@ before_install:
     - eval "${MATRIX_EVAL}"
 ```
 
-<h3 id="gcc-sur-freebsd">GCC sur FreeBSD.
-<a href="#gcc-sur-freebsd" class="ancre-titre after"></a></h3>
+<h3 id="gcc-sur-freebsd-en-c">GCC sur FreeBSD.
+<a href="#gcc-sur-freebsd-en-c" class="ancre-titre after"></a></h3>
 
 L'image Travis CI FreeBSD est livré avec GCC 10.0.0 (il n'est pas dans le système de base par défaut).
 
@@ -235,8 +236,8 @@ addons:
       - CXX=g++10
 ```
 
-<h3 id="clang-sous-linux">Clang sous Linux.
-<a href="#clang-sous-linux" class="ancre-titre after"></a></h3>
+<h3 id="clang-sous-linux-en-c">Clang sous Linux.
+<a href="#clang-sous-linux-en-c" class="ancre-titre after"></a></h3>
 
 * [Precise](./environnement-precise) est livré avec Clang 3.4 ;
 * [Trusty](./environnement-trusty) est livré avec Clang 3.5.0 ;
@@ -320,8 +321,8 @@ before_install:
     - eval "${MATRIX_EVAL}"
 ```
 
-<h3 id="clang-sous-freebsd">Clang sur FreeBSD.
-<a href="#clang-sous-freebsd" class="ancre-titre after"></a></h3>
+<h3 id="clang-sous-freebsd-en-c">Clang sur FreeBSD.
+<a href="#clang-sous-freebsd-en-c" class="ancre-titre after"></a></h3>
 
 <div class="notice cadre">
 Clang est le compilateur par défaut sur FreeBSD.

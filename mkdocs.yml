@@ -65,6 +65,7 @@ nav:
     - C: construire-un-projet-en-c.md
     - C#: construire-un-projet-en-c#.md
     - C++: construire-un-projet-en-c++.md
+    - Clojure: construire-un-projet-clojure.md
 
 not_in_nav: | 
    index.md
