@@ -18,7 +18,7 @@
 
 <div class="deux-colonnes">
   <div class="notice cadre">
-  Pour les versions linguistiques et d'autres informations spécifiques à l'environnement de compilation, consultez nos pages de référence :
+  Pour les versions de langage et d'autres informations spécifiques à l'environnement de compilation, consultez nos pages de référence :
   <p>
   <ul>
     <li><a href="environnement-precise.md">Precise</a> ;</li>
@@ -34,11 +34,10 @@
   </ul>
   </p>
   </div>
-
-<p>
+    <p>
 <table class="tableau">
     <thead>
-        <tr><th>C++</th><th>Défaut</th></tr>
+        <tr><th style="text-alin:left">C++</th><th style="text-align:left">Défaut</th></tr>
     </thead>
     <tbody>
         <tr>
@@ -66,11 +65,11 @@
             <div class="titre-code">
                 <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
             </div>
-```yml
-language: cpp
-```
+                ```yml
+                language: cpp
+                ```
         </th></tr>
-    </tfoot>
+     </tfoot>
 </table>
 </p>
 </div>
