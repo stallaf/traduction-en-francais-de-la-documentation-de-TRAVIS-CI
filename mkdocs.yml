@@ -66,6 +66,12 @@ nav:
     - C#: construire-un-projet-en-c#.md
     - C++: construire-un-projet-en-c++.md
     - Clojure: construire-un-projet-clojure.md
+    - Crystal: construire-un-projet-crystal.md
+    - D: construire-un-projet-en-d.md
+    - Dart: construire-un-projet-dart.md
+    - Elixir: construire-un-projet-elixir.md
+    - Elm: construire-un-projet-elm.md
+    
 
 not_in_nav: | 
    index.md

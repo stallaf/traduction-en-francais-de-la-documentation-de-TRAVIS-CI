@@ -18,7 +18,7 @@
 <div class="tableau-accueil">
     <table class="tableau">
         <thead>
-             <tr><th>C#</th><th>Défaut</th></tr>
+             <tr><th>C#</th><th>DÉFAUT</th></tr>
         </thead>
         <tbody>
             <tr>

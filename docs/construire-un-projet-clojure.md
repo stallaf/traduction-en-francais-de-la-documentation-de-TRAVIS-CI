@@ -20,54 +20,54 @@
 <div class="deux-colonnes">
     <div class="notice cadre">
     Pour les versions de langage et d'autres informations spécifiques à l'environnement de compilation, consultez nos pages de référence :
-        <p>
-            <ul>
-                <li><a href="environnement-precise.md">Precise</a> ;</li>
-                <li><a href="environnement-trusty.md">Trusty</a> ;</li>
-                <li><a href="environnement-xenial.md">Xenial</a> ;</li>
-                <li><a href="environnement-bionic.md">Bionic</a> ;</li>
-                <li><a href="environnement-focal.md">Focal</a> ;</li>
-                <li><a href="environnement-jammy.md">Jammy</a> ;</li>
-                <li><a href="environnement-noble.md">Noble</a> ;</li>
-            </ul>
-        </p>
+    <p>
+    <ul>
+        <li><a href="environnement-precise.md">Precise</a> ;</li>
+        <li><a href="environnement-trusty.md">Trusty</a> ;</li>
+        <li><a href="environnement-xenial.md">Xenial</a> ;</li>
+        <li><a href="environnement-bionic.md">Bionic</a> ;</li>
+        <li><a href="environnement-focal.md">Focal</a> ;</li>
+        <li><a href="environnement-jammy.md">Jammy</a> ;</li>
+        <li><a href="environnement-noble.md">Noble</a> ;</li>
+    </ul>
+    </p>
     </div>
-         <p>
-            <table class="tableau">
-                <thead>
-                    <tr><th  style="text-align:left">Clojure</th><th  style="text-align:left">Défaut</th></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="#gestion-des-dependances">Défaut</a><code>install</code></td>
-                        <td><code>lein deps</code></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#script-de-build-par-defaut">Défaut</a><code>script</code></td>
-                        <td><code>leintest</code></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#matrice-de-construction">Cle de matrice</a></td>
-                        <td><code>env</code>,<code>lein</code>,<code>jdk</code><td>
-                    </tr>
-                    <tr>
-                        <td>Support</td>
-                        <td><a href="mailtosupport@travis-ci.com">Travis CI</a></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr><th colspan="2" text-align="left">&nbsp;</th></tr>
-                    <tr><th colspan="2" text-align="left">Exemple minimal</th></tr>
-          <tr><th colspan="2" text-align="left">&nbsp;</th></tr>
-          <tr><th colspan="2">
-              <div class="titre-code">
-                  <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
-              </div>
-  ```yml
-  language: clojure
-  ```
-            </th>
+
+<p>
+<table class="tableau">
+    <thead>
+        <tr><th>Clojure</th><th>Défaut</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#gestion-des-dependances">Défaut</a><code>install</code></td>
+            <td><code>lein deps</code></td>
         </tr>
+        <tr>
+            <td><a href="#script-de-build-par-defaut">Défaut</a><code>script</code></td>
+            <td><code>leintest</code></td>
+        </tr>
+        <tr>
+            <td><a href="#matrice-de-construction">Cle de matrice</a></td>
+            <td><code>env</code>,<code>lein</code>,<code>jdk</code></td>
+        </tr>
+        <tr>
+            <td>Support</td>
+            <td><a href="mailtosupport@travis-ci.com">Travis CI</a></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr><th colspan="2" text-align="left">&nbsp;</th></tr>
+        <tr><th colspan="2" text-align="left">Exemple minimal</th></tr>
+        <tr><th colspan="2" text-align="left">&nbsp;</th></tr>
+        <tr><th colspan="2">
+            <div class="titre-code">
+                <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+            </div>
+```yml
+language: clojure
+```
+        </th></tr>
      </tfoot>
 </table>
 </p>

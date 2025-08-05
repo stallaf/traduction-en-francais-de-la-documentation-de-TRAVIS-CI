@@ -34,43 +34,44 @@
   </ul>
   </p>
   </div>
-    <p>
-<table class="tableau">
+
+<p>
+  <table class="tableau">
     <thead>
-        <tr><th style="text-alin:left">C++</th><th style="text-align:left">Défaut</th></tr>
+      <tr><th>C++</th><th>DÉFAUT</th></tr>
     </thead>
     <tbody>
-        <tr>
-            <td><a href="#gestion-des-dependances">Défaut</a><code>install</code></td>
-            <td>N/A</td>
-        </tr>
-        <tr>
-            <td><a href="#script-de-build-par-defaut">Défaut</a><code>script</code></td>
-            <td><code>./configure && make && make test</code></td>
-        </tr>
-        <tr>
-            <td><a href="#matrice-de-construction">Cle de matrice</a></td>
-            <td><code>env</code>,<code>compiler</code><td>
-        </tr>
-        <tr>
-            <td>Support</td>
-            <td><a href="mailtosupport@travis-ci.com">Travis CI</a></td>
-        </tr>
+      <tr>
+        <td><a href="#gestion-des-dependances">Défaut</a><code>install</code></td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td><a href="#script-de-build-par-defaut">Défaut</a><code>script</code></td>
+        <td><code>./configure && make && make test</code></td>
+      </tr>
+      <tr>
+        <td><a href="#matrice-de-construction">Cle de matrice</a></td>
+        <td><code>env</code>,<code>compiler</code></td>
+      </tr>
+      <tr>
+        <td>Support</td>
+        <td><a href="mailto:support@travis-ci.com">Travis CI</a></td>
+      </tr>
     </tbody>
     <tfoot>
-        <tr><th colspan="2" text-align="left">&nbsp;</th></tr>
-        <tr><th colspan="2" text-align="left">Exemple minimal</th></tr>
-        <tr><th colspan="2" text-align="left">&nbsp;</th></tr>
-        <tr><th colspan="2">
-            <div class="titre-code">
-                <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
-            </div>
-                ```yml
-                language: cpp
-                ```
-        </th></tr>
-     </tfoot>
-</table>
+      <tr><th colspan="2" text-align="left">&nbsp;</th></tr>
+      <tr><th colspan="2" text-align="left">Exemple minimal</th></tr>
+      <tr><th colspan="2" text-align="left">&nbsp;</th></tr>
+      <tr><th colspan="2">
+        <div class="titre-code">
+          <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
+        </div>
+```yml
+language: cpp
+```
+      </th></tr>
+    </tfoot>
+  </table>
 </p>
 </div>
 

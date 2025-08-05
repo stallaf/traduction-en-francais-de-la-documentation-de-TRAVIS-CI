@@ -18,7 +18,7 @@
 
 <div class="deux-colonnes">
   <div class="notice cadre">
-  Pour les versions linguistiques et d'autres informations spécifiques à l'environnement de compilation, consultez nos pages de référence :
+  Pour les versions de langage et d'autres informations spécifiques à l'environnement de compilation, consultez nos pages de référence :
   <p>
   <ul>
     <li><a href="environnement-precise.md">Precise</a> ;</li>
@@ -38,7 +38,7 @@
 <p>
 <table class="tableau">
     <thead>
-        <tr><th>C</th><th>Défaut</th></tr>
+        <tr><th>C</th><th>DÉFAUT</th></tr>
     </thead>
     <tbody>
         <tr>
