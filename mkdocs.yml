@@ -71,6 +71,7 @@ nav:
     - Dart: construire-un-projet-dart.md
     - Elixir: construire-un-projet-elixir.md
     - Elm: construire-un-projet-elm.md
+    - Erlang: construire-un-projet-erlang.md
     
 
 not_in_nav: | 
