@@ -1,4 +1,4 @@
-# Construireun projet en C#, , F#, ou Visual Basic.
+# Construireun projet en C#, F#, ou Visual Basic.
 
 <p>
 <div class="tdm">

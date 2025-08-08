@@ -1,0 +1,1 @@
+# Images minimale et génériques

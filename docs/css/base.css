@@ -79,6 +79,20 @@
 .fa-flag:before {
   content:"\f11d";
 }
+.fltrow {
+  height:1em;
+  background-color:#eaeaea;
+}
+.fltrow td {
+  border-bottom:1px solid #ccc !important;
+  border-top:1px solid #f4f4f4;
+  border-left:1px solid #ccc;
+  border-right:1px solid #f4f4f4;
+  padding:.2em !important;
+}
+.fltrow td:last-child {
+  border-right:1px solid #ccc
+}
 h2 {
   color: #39aa56;
 }
@@ -172,6 +186,43 @@ z-index: auto;
   float: right;
   height: auto;
   padding-left: 5%;
+}
+.tableau-erlang {
+  font-family:inherit;
+  border-spacing:0;
+  border:0;
+}
+.tableau-erlang th {
+  height:35px;
+  margin:0;
+  background-color:#eaeaea;
+  border-bottom:1px solid #ccc;
+  border-top:1px solid #f4f4f4;
+  border-left:1px solid #ccc;
+  border-right:1px solid #f4f4f4;
+  padding:.1em .7em;
+  color:#333;
+}
+.tableau-erlang th:last-child {
+  border-right:1px solid #ccc
+}
+.tableau-erlang td {
+  margin:0;
+  padding:.5em .7em;
+  border-bottom:1px solid #c6c6c6;
+  text-overflow:ellipsis
+}
+.tableau-erlang.resp {
+  display:block;
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+.tableau-erlang.resp .sort-arrow {
+  position:initial
+}
+.tableau-erlang.sticky th {
+  position:sticky;
+  top:-1px
 }
 tfoot th {
   text-align: left;

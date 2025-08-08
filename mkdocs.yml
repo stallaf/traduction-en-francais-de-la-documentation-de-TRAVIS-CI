@@ -72,6 +72,7 @@ nav:
     - Elixir: construire-un-projet-elixir.md
     - Elm: construire-un-projet-elm.md
     - Erlang: construire-un-projet-erlang.md
+    - F#: construire-un-projet-en-c#.md 
     
 
 not_in_nav: | 
