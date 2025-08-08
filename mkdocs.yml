@@ -63,7 +63,7 @@ nav:
   - 5. Langage de programmation: 
     - Android: construire-un-projet-android.md
     - C: construire-un-projet-en-c.md
-    - C#: construire-un-projet-en-c#.md
+    - C# (F#): construire-un-projet-en-c#.md
     - C++: construire-un-projet-en-c++.md
     - Clojure: construire-un-projet-clojure.md
     - Crystal: construire-un-projet-crystal.md
@@ -72,7 +72,9 @@ nav:
     - Elixir: construire-un-projet-elixir.md
     - Elm: construire-un-projet-elm.md
     - Erlang: construire-un-projet-erlang.md
-    - F#: construire-un-projet-en-c#.md 
+    - Generic: construire-un-projet-minimal.md 
+    - Go: construire-un-projet-en-go.md
+    - Groovy: construire-un-projet-groovy.md
     
 
 not_in_nav: | 
