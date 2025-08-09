@@ -76,6 +76,7 @@ nav:
     - Go: construire-un-projet-en-go.md
     - Groovy: construire-un-projet-groovy.md
     - Haskell: construire-un-projet-haskell.md
+    - Haxe: construire-un-projet-haxe.md
     
 
 not_in_nav: | 
