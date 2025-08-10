@@ -78,6 +78,7 @@ nav:
     - Haskell: construire-un-projet-haskell.md
     - Haxe: construire-un-projet-haxe.md
     - Java: construire-un-projet-java.md
+    - JavaScript (avec Node.js): construire-un-projet-javascript.md
     
 
 not_in_nav: | 
