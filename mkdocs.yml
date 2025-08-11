@@ -79,6 +79,7 @@ nav:
     - Haxe: construire-un-projet-haxe.md
     - Java: construire-un-projet-java.md
     - JavaScript (avec Node.js): construire-un-projet-javascript.md
+    - Julia: construire-un-projet-julia.md
     
 
 not_in_nav: | 
