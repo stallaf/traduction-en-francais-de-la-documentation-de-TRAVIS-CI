@@ -80,7 +80,11 @@ nav:
     - Java: construire-un-projet-java.md
     - JavaScript (avec Node.js): construire-un-projet-javascript.md
     - Julia: construire-un-projet-julia.md
+    - MATLAB: construire-un-projet-matlab.md
+    - Minimal: construire-un-projet-minimal.md
+    - Nix: construire-un-projet-nix.md
     
+
 
 not_in_nav: | 
    index.md
