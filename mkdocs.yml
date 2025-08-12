@@ -84,7 +84,7 @@ nav:
     - Minimal: construire-un-projet-minimal.md
     - Nix: construire-un-projet-nix.md
     - Perl: construire-un-projet-perl.md
-    
+    - Perl6: construire-un-projet-perl6.md
 
 
 not_in_nav: | 
