@@ -71,7 +71,7 @@ Ce guide traite de la configuration des projets Perl sur Travis CI. Si vous déc
                 <div class="item gauche">&nbsp;.travis.yml</div><div class="item droit">YAML</div>
             </div>
 ```yml
-language: perl
+language: perl 
 perl:
   - "5.28"
 ```

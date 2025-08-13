@@ -85,6 +85,7 @@ nav:
     - Nix: construire-un-projet-nix.md
     - Perl: construire-un-projet-perl.md
     - Perl6: construire-un-projet-perl6.md
+    - PHP: construire-un-projet-php.md
 
 
 not_in_nav: | 
