@@ -86,6 +86,7 @@ nav:
     - Perl: construire-un-projet-perl.md
     - Perl6: construire-un-projet-perl6.md
     - PHP: construire-un-projet-php.md
+    - Python: construire-un-projet-python.md
 
 
 not_in_nav: | 
