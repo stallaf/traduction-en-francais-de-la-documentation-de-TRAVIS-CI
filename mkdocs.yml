@@ -91,7 +91,7 @@ nav:
     - Ruby: construire-un-projet-ruby.md
     - Rust: construire-un-projet-rust.md
     - Scala: construire-un-projet-scala.md
-
+    - Smalltalk: construire-un-projet-smalltalk.md
 
 
 not_in_nav: | 

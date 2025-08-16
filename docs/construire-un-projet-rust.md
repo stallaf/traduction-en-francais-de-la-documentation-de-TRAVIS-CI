@@ -73,7 +73,7 @@ language: rust
   </p>
   </div>
 
-  Ce guide traite de la configuration des projets Rust sur Travis CI. Si vous découvrez Travis CI, veuillez vous assurer de lire d'abord nos guides <a href="./embarquement.md">d'intégration</a> et de <a href="./personnalisation-de-la-construction.md">configuration générale de la construction</a>.
+Ce guide traite de la configuration des projets Rust sur Travis CI. Si vous découvrez Travis CI, veuillez vous assurer de lire d'abord nos guides <a href="./embarquement.md">d'intégration</a> et de <a href="./personnalisation-de-la-construction.md">configuration générale de la construction</a>.
 
 <h2 id="choisir-version-de-rust">Choisissez une version de Rust.
 <a href="#choisir-version-de-rust" class="ancre-titre after"></a></h2>
