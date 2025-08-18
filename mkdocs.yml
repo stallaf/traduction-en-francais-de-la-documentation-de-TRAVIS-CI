@@ -63,7 +63,7 @@ nav:
   - 5. Langage de programmation: 
     - Android: construire-un-projet-android.md
     - C: construire-un-projet-en-c.md
-    - C# (F#): construire-un-projet-en-c#.md
+    - C# (F#): construire-un-projet-en-c-sharp.md
     - C++: construire-un-projet-en-c++.md
     - Clojure: construire-un-projet-clojure.md
     - Crystal: construire-un-projet-crystal.md
@@ -92,8 +92,10 @@ nav:
     - Rust: construire-un-projet-rust.md
     - Scala: construire-un-projet-scala.md
     - Smalltalk: construire-un-projet-smalltalk.md
-    - Visual Basic: construire-un-projet-en-c#.md
+    - Visual Basic: construire-un-projet-en-c-sharp.md
     - Ajouter un langage: ajouter-un-langage.md
+  - 6. Déploiements et téléchargements:
+     Vue d'ensemble: apercu-deploiements.md
 
 
 not_in_nav: | 
