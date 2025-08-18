@@ -92,6 +92,8 @@ nav:
     - Rust: construire-un-projet-rust.md
     - Scala: construire-un-projet-scala.md
     - Smalltalk: construire-un-projet-smalltalk.md
+    - Visual Basic: construire-un-projet-en-c#.md
+    - Ajouter un langage: ajouter-un-langage.md
 
 
 not_in_nav: | 
