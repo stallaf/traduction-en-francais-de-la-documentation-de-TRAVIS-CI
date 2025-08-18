@@ -95,7 +95,8 @@ nav:
     - Visual Basic: construire-un-projet-en-c-sharp.md
     - Ajouter un langage: ajouter-un-langage.md
   - 6. Déploiements et téléchargements:
-     Vue d'ensemble: apercu-deploiements.md
+    - Vue d'ensemble: apercu-deploiements.md
+    - anynines: deploiement-anynines.md
 
 
 not_in_nav: | 

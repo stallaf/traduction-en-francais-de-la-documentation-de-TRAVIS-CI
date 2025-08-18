@@ -145,6 +145,7 @@ h3{
 }
 .notice.attention {
   color:#b52b27;
+  border: 1px solid #b52b27;  
   border-left:5px solid #d9534f;
   background:#fdf7f7;
 }
