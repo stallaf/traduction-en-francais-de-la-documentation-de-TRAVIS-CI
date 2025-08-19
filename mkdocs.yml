@@ -97,6 +97,8 @@ nav:
   - 6. Déploiements et téléchargements:
     - Vue d'ensemble: apercu-deploiements.md
     - anynines: deploiement-anynines.md
+    - Atlas: deploiement-atlas.md
+    - AWS CodeDeploy: deploiement-aws-codedeploy.md
 
 
 not_in_nav: | 
